@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #4a5548; /* Define your color here */
+    --seconeary-color: #3B4437;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+}
+
+a:link {
+    color: var(--primary-color);
+}
+
+a:hover, a:active, a:visited {
+    color: var(--secondary-color);
+}
+
+li {
+    margin: 0.5rem 0 0.5rem;
+}
+
+.project {
+    margin: 5rem;
+    font-weight: 100;
+
+    .header {
+        border-left: 1rem solid var(--primary-color);
+        padding-left: 3rem;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: #707070;
+            margin: 0.5rem 0 0.5rem;
+            font-weight: normal;
+        }
+
+        .overview {
+            color: #707070;
+            margin-top: 2rem;
+        }
+    }
+
+    .section {
+
+        h2 {
+            font-size: 2rem;
+            padding-left: 3rem;
+            border-left: 1rem solid var(--primary-color);
+        }
+
+        .subsection {
+            padding-left: 4rem;
+           
+
+            .body {
+                display: flex;
+                flex-direction: column;
+                color: #707070;
+
+                .images-container {
+                    margin: 2rem 0 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    img {
+                        width: 80%;
+                    }
+
+                }
+
+                .waive-images {
+                    img {
+                        width: 40%;
+                    }
+                }
+
+                .background-separator {
+
+                    border:5px solid var(--primary-color);
+                    padding: 1rem;
+                    border-radius: 5px;
+                    width: fit-content;
+                }
+                .background-separator-centered {
+                    align-self: center;
+                }
+
+            }
+        }
+    }
+}
+
+.small-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    img {
+        flex-grow: 1 1 auto;
+        object-fit: cover;
+        min-width: 0;
+        min-height: 0;
+        height: auto;
+        padding: 0 1rem 0;
+    }
+
+    p {
+        padding: 0 1rem 0;
+    }
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
